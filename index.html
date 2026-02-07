@@ -240,9 +240,12 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
             margin-top: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .contact-info {
@@ -269,20 +272,6 @@
 
         .contact-item a:hover {
             text-decoration: underline;
-        }
-
-        /* Google Form Container */
-        .form-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .form-container iframe {
-            width: 100%;
-            min-height: 600px;
-            border: none;
         }
 
         /* Footer */
@@ -473,6 +462,9 @@
                     <h3>👨‍💼 Owner</h3>
                     <p><strong>Ernesto H</strong><br>Licensed Plumber</p>
                 </div>
+            </div>
+
+            <div class="contact-info">
                 <div class="contact-item">
                     <h3>📍 Service Area</h3>
                     <p>North San Diego<br>and surrounding areas</p>
@@ -481,28 +473,6 @@
                     <h3>✅ Credentials</h3>
                     <p>CA License: #1146131<br>Bonded & Insured</p>
                 </div>
-            </div>
-
-            <div class="form-container">
-                <h3 style="margin-bottom: 1rem; color: var(--primary-blue);">Request Service</h3>
-                <!-- REPLACE THIS URL WITH YOUR GOOGLE FORM EMBED URL -->
-                <!-- Instructions:
-                     1. Create your Google Form
-                     2. Click "Send" button in form
-                     3. Click the < > (embed) icon
-                     4. Copy the URL from src="..."
-                     5. Paste it below replacing the placeholder
-                -->
-                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0">
-                    Loading…
-                </iframe>
-                <!-- Alternatively, you can link to the form -->
-                <p style="text-align: center; margin-top: 1rem;">
-                    Or <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" style="color: var(--accent-blue); font-weight: bold;">open the form in a new window</a>
-                </p>
             </div>
         </div>
     </section>
